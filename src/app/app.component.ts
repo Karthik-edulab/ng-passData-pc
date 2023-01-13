@@ -7,9 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'passData';
-  data=10;
-  updateChild(){
-     this.data=Math.floor(Math.random()*15
-     )
+  
+  
+  //data=10;
+  // updateChild(){
+  //    this.data=Math.floor(Math.random()*15
+  //    )
+  // }
+  
+  
+  data="abc"
+  updateData(item:string){
+    console.warn(item);
+    this.data=item;
   }
 }
